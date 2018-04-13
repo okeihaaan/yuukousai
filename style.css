@@ -1,0 +1,219 @@
+/*共通スタイル*/
+
+body {
+    background-color: #FDF3DF;
+}
+h2 {
+    color: #333;
+    border-bottom: solid 3px #999;
+    padding: 0 15px;
+    margin: 40px auto 30px;
+    letter-spacing: .3em;
+}
+h3, h4, h5 {
+    color: #333;
+    padding: auto 10px;
+    letter-spacing: .1em;
+}
+h3::before {
+    content: "";
+    margin: 0 8px;
+    width: 18px;
+    height: 18px;
+    border-radius: 18px;
+    background-color: #72CCA9;
+    display: inline-block;
+}
+h4 {
+    font-size: 18px;
+}
+h4::before {
+    content: "";
+    margin: 0 14px 0 10px;
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    background-color: #FFABF4;
+    display: inline-block;
+}
+h5 {
+    font-size: 18px;
+    margin: 0 auto 10px;
+}
+p {
+    color: #333;
+}
+a {
+    text-decoration: none;
+    color: #666;
+}
+ul {
+    list-style: none;
+}
+li {
+    display: inline-block;
+}
+.flex-container {
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/*各セクションの設定*/
+
+
+/* header */
+
+header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #aeaeae;
+    z-index: 10;
+}
+.logo {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    text-align: center;
+    color: white;
+    letter-spacing: 3px;
+    padding-left: 3vw;
+}
+.header__body {
+    -ms-flex: 3 1 auto;
+    flex: 3 1 auto;
+}
+.menu {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    list-style: none;
+}
+.menu__item {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    letter-spacing: 3px;
+    padding: 10px;
+    color: white;
+    margin: 0;
+    padding: 5px;
+}
+.menu__item:hover {
+    color: #C2EBFC;
+    font-weight: 600;
+}
+nav ul li {
+    padding-left: 30px;
+}
+#hero {
+    height: 50vh;
+    margin-top: 70px;
+    padding-top: 20vh;
+    display: block;
+    text-align: center;
+}
+
+/* メインコンテンツ */
+
+.main {
+    padding: 0 5vw;
+}
+
+/* 概要 */
+
+#twitter, #facebook {
+    display: inline-block;
+}
+
+/* 企画紹介 */
+
+
+/* 新着情報 */
+
+.whatsnew {
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+
+.sns {
+	display: block;
+}
+
+#twitter, #facebook, #blog {
+	margin-bottom: 20px;
+}
+
+/* 協賛 */
+
+.support-card {
+    background-color: #fff;
+    padding: 15px 30px 30px;
+    border: dotted .3em #C2EBFC;
+    outline: solid .5em #fff;
+    margin: 20px 30px;
+}
+.support-card ul {
+    padding: 0;
+}
+.support-card li a {
+    display: inline-block;
+    flex-wrap: wrap;
+    margin: auto 15px;
+    ;
+}
+.support-card img {
+    width: 100px;
+}
+.support-card p {
+    text-align: center;
+}
+
+/* .station-box {
+	justify-content:flex-start;
+} */
+
+.station {
+    text-align: center;
+    display: inline-block;
+    padding: 0 30px 30px;
+    margin: auto 10px;
+}
+.station h5 {
+    text-align: center;
+}
+.station p {
+    text-align: left;
+}
+td {
+    text-align: left;
+    padding-right: 8px;
+}
+.map {
+    width: 100%;
+    text-align: center;
+}
+footer {
+    margin-top: 70px;
+    padding: 20px 5vw;
+    background-color: #C2EBFC;
+}
+footer .menu__item {
+    padding: 0 10px;
+    color: #999;
+}
+footer .menu__item:hover {
+    color: #fff;
+}
